@@ -36,6 +36,7 @@ const middle = function(array) {
   return middleArray;
 }
 
+//TEST CODE
 assertArraysEqual(middle([]), []); // => should PASS
 assertArraysEqual(middle([1]), []); // => should PASS
 assertArraysEqual(middle([1, 2]), []); // => should PASS
