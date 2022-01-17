@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@mikenguyentt/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "Lotide library package by Le Minh Nguyen",
+  "main": "",
   "directories": {
     "test": "test"
   },
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/MikeNguyenTT/lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Le Minh Nguyen",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MikeNguyenTT/lotide/issues"
