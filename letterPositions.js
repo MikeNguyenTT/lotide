@@ -45,3 +45,5 @@ assertArraysEqual(letterPositions("hello").e, [1]); // => should PASS
 assertArraysEqual(letterPositions("hello").l, [2, 3]); // => should PASS
 assertArraysEqual(letterPositions("hello").h, [0]); // => should PASS
 assertArraysEqual(letterPositions("hello").o, [4]); // => should PASS
+
+module.exports = letterPositions;

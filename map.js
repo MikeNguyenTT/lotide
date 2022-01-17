@@ -40,3 +40,5 @@ assertArraysEqual(results2, [6, 7, 2, 5, 3]); // => should PASS
 
 const results3 = map([1, 3, 6, 7, 9, 34], num => num * 2);
 assertArraysEqual(results3, [2, 6, 12, 14, 18, 68]); // => should PASS
+
+module.exports = map;

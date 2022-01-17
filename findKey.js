@@ -27,3 +27,5 @@ const key = findKey({
 
 // TEST CODE
 assertEqual(key, "noma");
+
+module.exports = findKey;

@@ -45,3 +45,5 @@ assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => shou
 const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); 
 assertArraysEqual(words, ["hello", "world", "lighthouse"]); // => should PASS
+
+module.exports = without;

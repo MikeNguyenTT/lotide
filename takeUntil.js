@@ -44,3 +44,5 @@ console.log(results2);
 // TEST CODE
 assertArraysEqual(results1, [1, 2, 5, 7, 2]); // => should PASS
 assertArraysEqual(results2, ["I've", "been", "to", "Hollywood"]); // => should PASS
+
+module.exports = takeUntil;
