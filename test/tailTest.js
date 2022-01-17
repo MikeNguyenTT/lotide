@@ -1,19 +1,29 @@
-const assertEqual = require('../assertEqual');
-const tail = require('../tail');
+const assert = require('chai').assert;
+const tail   = require('../tail');
 
-// Test Case: Check the original array not being modified
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
+describe("#tail", () => {
+  it("returns 1 for [1, 2, 3]", () => {
+    const testArray = ["Yo Yo", "Lighthouse", "Labs"];
+    tail(testArray)
+    assert.strictEqual(testArray.length, 3); // test the original array not being modified
+  });
 
-//Test Case: check the returned array value
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result.length, 2); // ensure we get back two elements
-assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
-assertEqual(result[1], "Labs"); // ensure second element is "Labs"
+  it(`returns ["Lighthouse", "Labs"] for ["Hello", "Lighthouse", "Labs"]`, () => {
+    const testArray = ["Hello", "Lighthouse", "Labs"];
+    tail(testArray)
+    assert.deepEqual(tail(testArray), ["Lighthouse", "Labs"]); 
+  });
 
-// Test Case: Check if one element array would yield an empty array
-assertEqual(tail(["Yo Yo"]).length, 0);
+  it(`returns [] for ["Hello"]`, () => {
+    const testArray = ["Hello"];
+    tail(testArray)
+    assert.deepEqual(tail(testArray), []); 
+  });
 
-// Test Case: Check if an empty array would yield an empty array
-assertEqual(tail([]).length, 0);
+  it(`returns [] for []`, () => {
+    const testArray = [];
+    tail(testArray)
+    assert.deepEqual(tail(testArray), []); 
+  });
+
+});
