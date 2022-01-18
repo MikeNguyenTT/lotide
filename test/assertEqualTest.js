@@ -1,4 +1,4 @@
-const assertEqual = require('../assertEqual');
+const assertEqual = require('../index').assertEqual;
 
 assertEqual("Lighthouse Labs", "Lighthouse Labs");
 assertEqual("Lighthouse Labs", "Bootcamp");

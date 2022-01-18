@@ -1,5 +1,5 @@
 const assert = require('chai').assert;
-const tail   = require('../tail');
+const tail = require('../index').tail;
 
 describe("#tail", () => {
   it("returns 1 for [1, 2, 3]", () => {
